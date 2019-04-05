@@ -7,7 +7,19 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<!-- Greeter greeter = new org.jacob.book.chap02.Greeter() -->
-	<bean id="greeter" class="org.juhee.book.ch03.Greeter" />
+	<bean id="memberDao" class="org.juhee.book.ch03.MemberDao" />
 
+	<!-- dependency injection by constructor -->
+	<bean id="memberRegisterService"
+		class="org.juhee.book.ch03.MemberRegisterService">
+		<constructor-arg ref="memberDao" />
+	</bean>
+
+	<!-- dependency injection by setter -->
+	<!-- 
+	<bean id="memberRegisterService"
+		class="org.jacob.book.chap03.MemberRegisterService">
+		<property name="memberDao" ref="memberDao"/>
+	</bean>
+	-->
 </beans>

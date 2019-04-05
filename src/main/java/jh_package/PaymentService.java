@@ -1,7 +1,9 @@
 package jh_package;
 
+import jh_package.MemberDao;
+
 public class PaymentService {
-MemberDao memberDao;
+	MemberDao memberDao;
 	
 	// property memberDao setter
 	public void setMemberDao(MemberDao memberDao) {
@@ -10,7 +12,6 @@ MemberDao memberDao;
 
 	public void pay() {
 		memberDao.getMember();
-		System.out.println("지급이 완료되었습니다.");
+		System.out.println("회원 정보를 저장하였습니다.");
 	}
 }
-
