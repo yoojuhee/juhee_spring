@@ -9,9 +9,22 @@ public class MemberRegisterService {
 
 	static Logger logger = LogManager.getLogger();
 
+	public MemberRegisterService() {
+	}
+
+
+
 	public MemberRegisterService(MemberDao memberDao) {
 		this.memberDao = memberDao;
 	}
+
+	
+	
+	public void setMemberDao(MemberDao memberDao) {
+		this.memberDao = memberDao;
+	}
+
+
 
 	public void regist(RegisterRequest req) throws DuplicateMemberException {
 		logger.debug(req);

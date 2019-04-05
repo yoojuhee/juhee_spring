@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class MemberMainUsingSpring {
 
 	public static void main(String[] args) {
-		ApplicationContext ctx = new ClassPathXmlApplicationContext("chap03.xml");
+		ApplicationContext ctx = new ClassPathXmlApplicationContext("ch03.xml");
 		MemberRegisterService regService = ctx.getBean("memberRegisterService",MemberRegisterService.class);
 
 		RegisterRequest req = new RegisterRequest();

@@ -7,7 +7,7 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<bean id="memberDao" class="spring.chap03.MemberDao" />
+	<bean id="memberDao" class="org.juhee.book.ch03.MemberDao" />
 
 	<!-- dependency injection by constructor -->
 	<!-- 
@@ -19,7 +19,7 @@
 
 	<!-- dependency injection by setter -->
 	<bean id="memberRegisterService"
-		class="spring.chap03.MemberRegisterService">
+		class="org.juhee.book.ch03.MemberRegisterService">
 		<property name="memberDao" ref="memberDao"/>
 	</bean>
 </beans>

@@ -7,5 +7,5 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<context:component-scan base-package="spring.chap04" />
+	<context:component-scan base-package="org.juhee.book.ch04" />
 </beans>
