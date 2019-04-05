@@ -1,4 +1,4 @@
-package spring.chap02;
+package org.juhee.book.ch02;
 
 public class Greeter {
 	public String greet() {

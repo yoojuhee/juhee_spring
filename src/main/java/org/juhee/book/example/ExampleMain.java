@@ -1,4 +1,4 @@
-package jh_package;
+package org.juhee.book.example;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

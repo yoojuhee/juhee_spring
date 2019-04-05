@@ -1,5 +1,4 @@
-package jh_package;
-
+package org.juhee.book.example;
 public class MemberDao {
 
 	public MemberDao() {

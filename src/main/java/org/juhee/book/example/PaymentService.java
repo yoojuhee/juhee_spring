@@ -1,6 +1,6 @@
-package jh_package;
+package org.juhee.book.example;
 
-import jh_package.MemberDao;
+import org.juhee.book.example.MemberDao;
 
 public class PaymentService {
 	MemberDao memberDao;

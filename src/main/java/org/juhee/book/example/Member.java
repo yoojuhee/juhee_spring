@@ -1,4 +1,4 @@
-package jh_package;
+package org.juhee.book.example;
 
 public class Member {
 

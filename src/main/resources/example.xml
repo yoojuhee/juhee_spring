@@ -7,18 +7,18 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<bean id="memberDao" class="jh_package.MemberDao" />
+	<bean id="memberDao" class="spring.example.MemberDao" />
 
 	<bean id="articleService"
-		class="jh_package.ArticleService">
+		class="spring.example.ArticleService">
 		<property name="memberDao" ref="memberDao" />
 	</bean>
 
 	<!--  dependency injection, DI -->
 	<bean id="paymentService"
-		class="jh_package.PaymentService">
+		class="spring.example.PaymentService">
 		<property name="memberDao" ref="memberDao" />
 	</bean>
 
 
-</beans>
+</beans>>
